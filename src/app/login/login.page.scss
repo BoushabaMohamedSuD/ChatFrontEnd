@@ -1,0 +1,19 @@
+ion-header {
+    box-shadow: 0 0px 20px rgb(0, 0, 0);
+}
+
+ion-content {
+    --background: linear-gradient(to right top, rgba(38, 194, 129, 1) 40%, #34ca8b 100%);
+
+}
+
+.input {
+    color: rgb(255, 255, 255);
+    --border-color: rgb(84, 255, 84);
+}
+
+.inputHolder {
+    background-color: rgba(38, 194, 129, 1);
+    --background: rgba(38, 194, 129, 1);
+    box-shadow: 0 0px 20px rgb(0, 0, 0);
+}

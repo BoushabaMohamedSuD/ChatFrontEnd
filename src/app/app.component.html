@@ -1,0 +1,80 @@
+<ion-app>
+  <ion-menu side="start" menuId="first1">
+    <ion-header style="background-color: aqua">
+      <ion-toolbar color="success">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen="true">
+      <ion-list>
+        <ion-item (click)="Profile()" color="success" fill="outline">
+          <ion-button expand="block" fill="clear" strong="true" [routerLink]="[ 'login']">
+            <ion-icon name="menu"></ion-icon>
+            <ion-label>Light</ion-label>
+          </ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+        </ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-menu side="start" menuId="first" class="first">
+    <ion-header style="background-color: aqua">
+      <ion-toolbar style="--background: rgba(38, 194, 129, 1)">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="true" color="success">
+          <ion-item routerDirection="forward" class="ion-no-margin">
+            <ion-button expand="block" fill="clear" strong="true" (click)="Logout()">
+              <ion-icon class="buttonLabel" name="exit" slot="start"></ion-icon>
+            </ion-button>
+            <ion-button expand="block" fill="clear" strong="true" (click)="Logout()">
+              <ion-label class="buttonLabel">Log out</ion-label>
+            </ion-button>
+
+          </ion-item>
+          <ion-item routerDirection="forward">
+            <ion-button expand="block" fill="clear" strong="true" [routerLink]="[ 'login']">
+              <ion-icon class="buttonLabel" name="contact" slot="start"></ion-icon>
+            </ion-button>
+            <ion-button expand="block" fill="clear" strong="true" [routerLink]="[ 'login']">
+              <ion-label class="buttonLabel">Profile</ion-label>
+            </ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+
+
+
+
+
+  <ion-menu side="end" type="push">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>End Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>

@@ -1,0 +1,45 @@
+/*ion-menu {}
+
+ion-content {
+    --background: aqua;
+    --offset-top: 500px
+}
+
+ion-list {
+    --background: rgb(179, 255, 0);
+    --offset-top: 0px;
+}
+
+ion-item {
+    --border-color: aqua;
+    --border-raduise: 5px;
+    --box-shadow: 10px;
+
+}*/
+ion-content {
+    --background: linear-gradient(to right top, rgba(38, 194, 129, 1) 40%, #34ca8b 100%);
+
+}
+
+/*ion-menu-toggle {
+    --background: aqua;
+}*/
+ion-list {
+    background-color: rgba(0, 255, 255, 0)
+}
+
+ion-item {
+    --background: rgba(0, 255, 136, 0.829);
+    margin-bottom: 2px;
+
+
+}
+
+ion-header {
+    box-shadow: 0 0px 20px rgb(0, 0, 0);
+}
+
+.buttonLabel {
+    --background: black;
+    color: #ffffff;
+}
